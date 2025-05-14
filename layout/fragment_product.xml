@@ -1,0 +1,235 @@
+<!-- activity_product_browse.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainproduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background">
+
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+        app:layout_constraintEnd_toStartOf="@+id/imageView31"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imageView30" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+        app:layout_constraintEnd_toStartOf="@+id/imageView28"
+        app:layout_constraintStart_toEndOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Shop Products">
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/cart" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:queryHint="Search products..." />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/furniture"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/kitchenware"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView27"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="@+id/imageView27" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+        app:layout_constraintEnd_toEndOf="@+id/imageView28"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/decoration"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imageView30" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/electronic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/cleaning"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+        app:layout_constraintEnd_toEndOf="@+id/imageView31"
+        app:layout_constraintStart_toStartOf="@+id/imageView31" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold1"
+        android:text="@string/Furniture"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold1"
+        android:text="@string/Kitchenware"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView27"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold1"
+        android:text="@string/HomeAppliance"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView28"
+        app:layout_constraintStart_toStartOf="@+id/imageView28"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold1"
+        android:text="@string/Electronics"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold1"
+        android:text="@string/Electronics"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView31"
+        app:layout_constraintStart_toStartOf="@+id/imageView31"
+        app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold1"
+        android:text="@string/HomeDecor"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView30"
+        app:layout_constraintStart_toStartOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewproductload"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

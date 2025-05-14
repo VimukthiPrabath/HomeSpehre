@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Settings"
+        android:textSize="24sp"
+        android:textColor="@color/background"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:textStyle="bold" />
+
+    <!-- Logout -->
+    <LinearLayout
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/logout_admin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Privacy Policy -->
+    <LinearLayout
+        android:id="@+id/btnPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/policy_admin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Terms & Conditions -->
+    <LinearLayout
+        android:id="@+id/btnTerms"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/terms_admin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- App Info / Version -->
+    <LinearLayout
+        android:id="@+id/btnAppInfo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Info &amp; Version"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Version Display -->
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0.0"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

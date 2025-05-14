@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_admin_popup"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvPopupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Admin Profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/etPopupAdminName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/etPopupAdminEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Mobile Field -->
+    <EditText
+        android:id="@+id/etPopupAdminMobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etPopupAdminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancelPopup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/gray"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSavePopup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/background"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

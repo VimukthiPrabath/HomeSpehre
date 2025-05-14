@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_dashboard"
+        android:icon="@drawable/dashboard"
+        android:title="@string/AdminDashboard" />
+
+    <item
+        android:id="@+id/nav_menu_manageProduct"
+        android:icon="@drawable/productadmin"
+        android:title="@string/AdminProductManage" />
+
+    <item
+        android:id="@+id/nav_menu_addProduct"
+        android:icon="@drawable/productadmin"
+        android:title="@string/AdminProduct" />
+
+    <item
+        android:id="@+id/nav_menu_updateProduct"
+        android:icon="@drawable/productadmin"
+        android:title="@string/AdminProductUpdate" />
+
+    <item
+        android:id="@+id/nav_menu_User"
+        android:icon="@drawable/users"
+        android:title="@string/AdminUsers" />
+
+    <item
+        android:id="@+id/nav_menu_Order"
+        android:icon="@drawable/order"
+        android:title="@string/AdminOrder" />
+
+    <item
+        android:id="@+id/nav_menu_profile"
+        android:icon="@drawable/profileadmin"
+        android:title="@string/AdminProfile" />
+
+    <item
+        android:id="@+id/nav_menu_setting"
+        android:icon="@drawable/settingadmin"
+        android:title="@string/AdminSetting" />
+
+
+
+</menu>

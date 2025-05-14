@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302022644620",
+    "project_id": "homesphere-a609d",
+    "storage_bucket": "homesphere-a609d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302022644620:android:1da165592b5ba36c2afca9",
+        "android_client_info": {
+          "package_name": "lk.javainstitute.homesphre"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2CZXXAmXzbLCCEz5VM3sKfPIQzQf7R-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

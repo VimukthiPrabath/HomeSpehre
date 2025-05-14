@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/orderCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/txtOrderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order #12345"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:letterSpacing="0.02"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: $250.00"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered"
+            android:textColor="#ffffff"
+            android:background="@drawable/status_background"
+            android:padding="6dp"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:id="@+id/txtOrderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: 2025-05-05"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

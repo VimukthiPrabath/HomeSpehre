@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:elevation="24dp"
+    android:gravity="center"
+    android:minWidth="300dp"
+    android:minHeight="400dp"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:radius="16dp">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="16dp"
+        android:text="User Details"
+        android:textAlignment="center"
+        android:textColor="#1E8693"
+        android:textSize="26sp" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Username: John Doe"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Email: johndoe@example.com"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Phone: +1234567890"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Address: 123 Street, City, Country"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Status: Active"
+        android:textColor="#1E8693"
+        android:textSize="20sp" />
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#1E8693"
+        android:paddingLeft="32dp"
+        android:paddingTop="16dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="16dp"
+        android:text="Close"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

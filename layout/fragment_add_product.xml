@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Product Image Picker -->
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/image_border"
+            android:contentDescription="Product Image"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#1E8693"
+            android:text="Select Image"
+            android:textColor="@android:color/white" />
+
+        <!-- Product Name -->
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Product Name"
+            android:padding="12dp" />
+
+        <!-- Product Description -->
+        <EditText
+            android:id="@+id/etProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="top|start"
+            android:hint="Product Description"
+            android:inputType="textMultiLine"
+            android:padding="12dp" />
+
+        <!-- Category Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Product Category"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnAddNewCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#1E8693"
+            android:text="Add New Category"
+            android:textColor="@android:color/white" />
+
+        <!-- Product Price -->
+        <EditText
+            android:id="@+id/etProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Product Price"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <!-- Product Quantity (Custom Stepper) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Product Quantity"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDecrease"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/minus"
+                android:backgroundTint="#1E8693"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="64dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnIncrease"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/plus"
+                android:backgroundTint="@color/background"
+                android:text="+"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Save Product Button -->
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#1E8693"
+            android:padding="12dp"
+            android:text="Save Product"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
